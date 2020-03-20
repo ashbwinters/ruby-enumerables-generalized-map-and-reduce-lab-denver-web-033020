@@ -17,7 +17,7 @@ def reduce(array, starting_point = nil)
     index = 1
   end
   while index < array.length do
-    total = yield(answer,array[index])
+    total = yield(answer, array[index])
     index += 1
   end
   answer
