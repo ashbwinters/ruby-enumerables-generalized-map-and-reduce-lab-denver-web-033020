@@ -9,7 +9,8 @@ def map(array)
 end
 
 def reduce(array, starting_point=nil)
-  if answer = 0
+  if starting_point
+    total = starting_point
   while starting_point < array.length do
     yield(array[starting_point])
     starting_point += 1
