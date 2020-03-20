@@ -8,13 +8,11 @@ def map(array)
   new_array
 end
 
-def reduce(array, starting_point=nil)
-  if starting_point
-    total = starting_point
-  while starting_point < array.length do
-    yield(array[starting_point])
-    starting_point += 1
+def reduce(array, starting_point = 0)
+  index = 1
+  while index < array.length do
+    yield(array[index])
+    index += 1
   end
-  answer
 end
 
