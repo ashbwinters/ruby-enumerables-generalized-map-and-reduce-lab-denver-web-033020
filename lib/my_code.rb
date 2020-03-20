@@ -10,9 +10,11 @@ end
 
 def reduce(array, starting_point = 0)
   index = 1
+  total = starting_point
   while index < array.length do
     yield(array[index])
     index += 1
   end
+  total
 end
 
